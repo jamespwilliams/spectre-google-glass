@@ -1,5 +1,9 @@
 # spectre-google-glass
-An attempt at an implementation of Spectre v1 for Google Glass
+An (non-working) attempt at an implementation of Spectre v1 for Google Glass. The exploit runs, but doesn't work - data is not exfiltrated correctly.
+
+Produced as part of a coursework for CO332 (Advanced Computer Architecture) at Imperial College. 
+
+Based heavily on https://gist.github.com/ErikAugust/724d4a969fb2c6ae1bbd7b2a9e3d4bb6 and https://github.com/crozone/SpectrePoC.
 
 ### Requirements
 
